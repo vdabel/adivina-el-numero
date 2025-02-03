@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+
+            <div class="contenedor-img">
+                <img src="img/copia.png">
+            </div>
+
+
+            <div class="contenedor-info">
+                <div class="contenedor-input">
+                    <h1></h1>
+                    <input type="number" id="valor-usuario" placeholder="">
+                    <label for="valor-usuario"></label>
+                </div>
+                
+                <div class="contenedor-btn">
+                    <button onclick="verificarIntento();" id="intentar" class="btn intento">Intentar</button>
+                    <button onclick="reiniciarJuego();" id="nuevo-juego" class="btn nuevo" disabled>Nuevo Juego</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
